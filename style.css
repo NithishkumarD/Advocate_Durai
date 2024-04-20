@@ -1,0 +1,244 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    /* text-align: center; */
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1 {
+    /* margin-bottom: 0.5rem; */
+    flex: 2;
+}
+header #nav-bar{
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav ul li {
+    /* display: inline; */
+    flex: 1fr;
+    margin-right: 1rem;
+}
+nav ul li a{
+    padding: 10px;
+}
+nav ul li a:hover{
+    background-color: aqua;
+    color: black;
+    border-radius: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+@media (min-width: 768px) {
+    #nav-bar-mobile{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    #nav-bar{
+        display: none;
+    }
+    #nav-bar-mobile{
+        display: block;
+    }
+}
+
+#nav-bar-mobile{
+    margin-top: 15px;
+}
+#nav-bar-mobile ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav-bar-mobile ul li a {
+    color: black;
+}
+
+/* Main content styles */
+.about {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* height: 90vh; */
+}
+#about-pic{
+   width: 100%;
+   /* border: 1px solid black; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.about #about-pic img{
+    width: 250px;
+    height: 350px;
+    /* border: 1px solid black; */
+}
+@media (max-width: 768px) {
+    #about{
+        grid-template-columns: 1fr;
+    }
+}
+#about-content{
+    padding: 20px;
+}
+#about-content h2{
+    text-align: center;
+    background-color: aqua;
+    width: 130px;
+    margin: auto;
+    border-radius: 20px;
+}
+#about-content p{
+    text-align: justify;
+    margin-top: 10px;
+}
+#about-content p span{
+    font-size: 20px;
+    font-weight: bolder;
+}
+/* section {
+    padding: 2rem;
+} */
+
+/* About section styles */
+
+
+/* Services section styles */
+#services {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+#service-li{
+    margin-top: 20px;
+}
+#services h2{
+    text-align: center;
+    background-color: aqua;
+    width: 130px;
+    margin: auto;
+    border-radius: 20px;
+}
+#services #service-li{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 25px;
+}
+#services #service-li li{
+    text-align: justify;
+    list-style-type: none;
+}
+@media (max-width: 1000px) {
+    #services #service-li{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 768px) {
+    #services #service-li{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Gallery section styles */
+#gallery {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+#gallery h2{
+    text-align: center;
+    background-color: aqua;
+    width: 130px;
+    margin: auto;
+    border-radius: 20px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.gallery img {
+    width: 100%;
+    border-radius: 50px;
+
+}
+
+/* Contact section styles */
+#contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    background-color: lightgray;
+}
+#contact h2{
+    text-align: center;
+    background-color: aqua;
+    width: 130px;
+    margin: auto;
+    border-radius: 20px;
+}
+#contact-content{
+    margin-top: 20px;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive styles */
+/* @media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+} */
